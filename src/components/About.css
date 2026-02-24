@@ -1,0 +1,107 @@
+.about-section {
+    background-color: var(--color-background);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -5%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(0, 191, 165, 0.05) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+    position: relative;
+    z-index: 1;
+}
+
+.about-image {
+    flex: 0 0 300px;
+    height: 400px;
+    background: linear-gradient(135deg, rgba(0, 123, 181, 0.1), rgba(0, 191, 165, 0.1));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 画像プレースホルダーとしての装飾 */
+.about-image::after {
+    content: 'Photo / Character';
+    color: var(--color-primary);
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-subtitle {
+    color: var(--color-secondary);
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.about-greeting {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.about-description {
+    color: var(--color-text-muted);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.strengths-list {
+    list-style: none;
+}
+
+.strengths-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    color: var(--color-text-main);
+    font-weight: 500;
+}
+
+.check-icon {
+    color: var(--color-secondary);
+    margin-right: 15px;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 992px) {
+    .about-content {
+        flex-direction: column;
+        padding: 30px;
+        gap: 40px;
+    }
+
+    .about-image {
+        width: 100%;
+        flex: none;
+        height: 300px;
+    }
+}

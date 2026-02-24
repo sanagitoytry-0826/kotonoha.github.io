@@ -1,0 +1,57 @@
+.contact-section {
+    background-color: var(--color-surface);
+    text-align: center;
+}
+
+.contact-card {
+    background: white;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 123, 181, 0.08);
+    border-top: 5px solid var(--color-primary);
+}
+
+.contact-text {
+    font-size: 1.2rem;
+    color: var(--color-text-main);
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.contact-btn-wrapper {
+    margin-top: 30px;
+}
+
+.contact-btn {
+    font-size: 1.2rem;
+    padding: 18px 45px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer {
+    background-color: var(--color-text-main);
+    color: white;
+    padding: 40px 0 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-logo span {
+    color: var(--color-secondary);
+}
+
+.footer-copy {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    margin-top: 30px;
+}
